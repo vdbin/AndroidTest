@@ -15,10 +15,18 @@ import com.e.photounsplasht.view.model.ImageViewModel;
 
 public class ImageAdapter extends PagedListAdapter<Image, ImageAdapter.PhotoViewHolder> {
 
-    ImageViewModel imageViewModel;
+    private ImageViewModel imageViewModel;
 
     public ImageAdapter(ImageViewModel imageViewModel) {
         super(Image.CALLBACK);
+        this.imageViewModel = imageViewModel;
+    }
+
+    public ImageViewModel getImageViewModel() {
+        return imageViewModel;
+    }
+
+    public void setImageViewModel(ImageViewModel imageViewModel) {
         this.imageViewModel = imageViewModel;
     }
 

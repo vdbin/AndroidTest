@@ -11,7 +11,7 @@ import java.util.List;
 
 public class ImageDataSource extends PageKeyedDataSource<Integer, Image> {
 
-    String searchQuery = "";
+    private String searchQuery = "";
 
     public String getSearchQuery() {
         return searchQuery;

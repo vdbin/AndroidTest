@@ -3,8 +3,7 @@ package com.e.photounsplasht.data.source;
 import androidx.paging.DataSource;
 
 public class ImageDataSourceFactory extends DataSource.Factory {
-    ImageDataSource imageDataSource;
-    String searchQuery = "";
+    private String searchQuery = "";
 
     public ImageDataSourceFactory() {
     }
@@ -23,8 +22,7 @@ public class ImageDataSourceFactory extends DataSource.Factory {
 
     @Override
     public DataSource create() {
-        imageDataSource = new ImageDataSource(searchQuery);
-        return imageDataSource;
+        return new ImageDataSource(searchQuery);
     }
 
 }

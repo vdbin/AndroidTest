@@ -29,9 +29,9 @@ public class MainActivity extends AppCompatActivity {
     private ImageViewModel imageViewModel;
     private SearchView searchView;
     private String savedSearchQuery;
-    private static final String SEARCH_KEY = "search";
     private Handler handler;
     private Runnable runnable;
+    private final String SEARCH_KEY = "search";
     private final int MY_PERMISSIONS_REQUEST_WRITE_STORAGE = 312;
 
     @Override
