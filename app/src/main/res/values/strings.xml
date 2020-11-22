@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PhotoUnsplashT</string>
+    <string name="savedToGallery">Фото сохранено в галерею</string>
+    <string name="noStoragePermission">Для сохранения предоставьте доступ к хранилищу</string>
+</resources>
